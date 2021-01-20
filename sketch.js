@@ -15,7 +15,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-
+    
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
 
@@ -39,7 +39,7 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background("blue");
     Engine.update(engine);
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
